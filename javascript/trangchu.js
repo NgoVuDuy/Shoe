@@ -102,6 +102,7 @@ const buyBtn1 = document.querySelectorAll(".product-link button")
 buyBtn1.forEach((button, index) => {
     button.addEventListener("click", function() {
         localStorage.removeItem("total")
+        localStorage.removeItem("chitietsanpham")
     })
 })
 

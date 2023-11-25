@@ -44,5 +44,5 @@ buyBtn.addEventListener("click", function() {
         } else if (result.isDenied) {
           Swal.fire('Đặt hàng thất bại !', '', 'error')
         }
-      })
+    })
 })

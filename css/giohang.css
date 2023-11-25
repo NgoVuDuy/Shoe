@@ -5,22 +5,25 @@
   display: flex;
   align-items: center;
 }
+.cart-product p {
+  margin-left: 20px;
+}
 .row {
   align-items: center;
 }
  input {
   width: 40%;
 }
-.col-1 button,
-.col-2 button {
+.col-lg-1 button,
+.col-lg-2 button {
   width: 100%;
   background-color: red;
   color: white;
   border: none;
   padding: 4px 0px;
 }
-.col-1 button:hover,
-.col-2 button:hover {
+.col-lg-1 button:hover,
+.col-lg-2 button:hover {
   opacity: 0.8;
 }
 .container {
@@ -30,4 +33,11 @@
   text-align: center;
   color: red;
   font-weight: bold;
+}
+.padding-fix {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.cart-product p {
+  margin: 0px 0px 0px 20px !important;
 }

@@ -9,22 +9,22 @@ if(cartItems != null) {
     cartItems.forEach(cartItem => {
         const productHTML = `
             <div class="row mt-2">
-                <div class="col-5">
+                <div class="col-lg-5 col-md-6">
                     <div class="cart-product">
-                        <img src="${cartItem.img}" alt="" width="20%">
+                        <img src="${cartItem.img}" alt="" width="25%">
                         <p>${cartItem.name}</p>
                     </div>
                 </div>
-                <div class="col-2">
-                    <p>${cartItem.price}</p>
+                <div class="col-lg-2 col-md-2">
+                    <p><span class= "d-block d-lg-none d-md-none">Đơn giá: </span>${cartItem.price}</p>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-md-2">
                     <input type="number" value="1" min="1" max="5">
                 </div>
-                <div class="col-2">
-                    <p class="sum">${cartItem.price}</p>
+                <div class="col-lg-2 col-md-2">
+                <span class= "d-block d-lg-none d-md-none">Tổng tiền: </span><p class="sum">${cartItem.price}</p>
                 </div>
-                <div class="col-1">
+                <div class="col-lg-1 col-md-12">
                     <button>Xóa</button>
                 </div>
             </div>
@@ -32,7 +32,7 @@ if(cartItems != null) {
         cartContainer.innerHTML += productHTML;
     });
 }
-const inputNum = document.querySelectorAll(".mt-2 .col-2 input")
+const inputNum = document.querySelectorAll(".mt-2 .col-lg-2 input")
 const sum = document.querySelectorAll(".sum")
 const total = document.querySelector(".total")
 var sumDefault = 0.0
@@ -79,7 +79,7 @@ inputNum.forEach((input, index) => {
                   "margin-top": "80px",
                 },
                 onClick: function(){}
-              }).showToast();
+            }).showToast();
         }
     })
 })
@@ -121,7 +121,7 @@ clearBtn.addEventListener("click", function() {
 })
 
 // Xử lý xóa từng sản phẩm
-const deleteProduct = document.querySelectorAll(".mt-2 .col-1 button")
+const deleteProduct = document.querySelectorAll(".mt-2 .col-lg-1 button")
 deleteProduct.forEach((deleteBtn, index) => {
     deleteBtn.addEventListener("click", function() {
         cartItems.splice(index, 1)
@@ -134,6 +134,9 @@ deleteProduct.forEach((deleteBtn, index) => {
 // Đưa mảng chứa thông tin các sản phẩm lên bộ nhớ cục bộ
 const ThanhToanBtn = document.querySelector(".thanhtoan")
 ThanhToanBtn.addEventListener("click", function() {
+    localStorage.removeItem("chitietsanpham")
+
+
     thanhtoanArray.push(total.textContent)
     cartItems.forEach((cartItem, index) => {
         const valueProduct = {

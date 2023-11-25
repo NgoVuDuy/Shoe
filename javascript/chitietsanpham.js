@@ -8,9 +8,16 @@ const productColor = document.querySelector(".product-color b")
 const productImg = document.querySelectorAll(".col-lg-6 img")
 const productIntro = document.querySelector(".product-intro")
 const productSize = document.querySelectorAll(".product-size span")
+const productNumber = document.querySelector(".product-number")
 
-const productBuy = document.querySelector(".product-buy-container")
+// const productBuy = document.querySelector(".product-buy-container")
+var checkClickedImg = false
+var checkClickedSize = false
 
+var soluongProduct
+var imgProduct
+var sizeProduct
+var productArray = []
 
 const urlParams = new URLSearchParams(window.location.search)
 var id = urlParams.get("id")
@@ -28,15 +35,18 @@ productsList.forEach(product => {
 
         productIntro.textContent = product.describe
 
-        var productHTML = `
-            <a href="/html/muahang.html?id=${product.id}"><button class="product-buy-now product-btn">Mua ngay</button></a>
-        `
-        productBuy.innerHTML += productHTML
+        // var productHTML = `
+        //     <a href="/html/muahang.html?id=${product.id}"><button class="product-buy-now product-btn">Mua ngay</button></a>
+        // `
+        // productBuy.innerHTML += productHTML
     }
 })
 
 productImg.forEach((img, index) => {
     img.addEventListener("click", function() {
+        checkClickedImg = true
+
+        imgProduct = img.src
         productImg.forEach((otherImg) => {
             otherImg.style.border = "none";
         });
@@ -55,6 +65,8 @@ productImg.forEach((img, index) => {
 productSize.forEach((size, index) => {
 
     size.addEventListener("click", function() {
+        sizeProduct = size.textContent
+        checkClickedSize = true
         productSize.forEach((sizeOther, index) => {
             sizeOther.style.border = "1px black solid"
         })
@@ -62,3 +74,28 @@ productSize.forEach((size, index) => {
 
     })
 })
+
+const productBtn = document.querySelector(".product-buy-now")
+productBtn.addEventListener("click", function() {
+    if(!checkClickedImg || !checkClickedSize) {
+        Swal.fire('Bạn chưa chọn kích thước hoặc màu giày !','', 'errors')
+    } else {
+        // console.log(sizeProduct)
+        // console.log(productColor.textContent)
+        // console.log(imgProduct)
+        // console.log(productNumber.value)
+
+        const product = {
+            img: imgProduct,
+            size: sizeProduct,
+            color: productColor.textContent,
+            sl: productNumber.value,
+            ID: id 
+        }
+        productArray.push(product)
+        // console.log(productArray)
+        localStorage.setItem("chitietsanpham", JSON.stringify(productArray))
+        window.location.href = "../html/muahang.html"
+    }
+})
+
