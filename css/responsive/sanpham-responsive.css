@@ -1,0 +1,21 @@
+@media (max-width: 575px) {
+    /* CSS cho điện thoại di động */
+    .row {
+        justify-content: center;
+    }
+    .brand-sale {
+        bottom: 22%;
+    }
+    .brand-sale p{
+        padding: 2px 4px;
+    }
+        
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+    .brand-sale {
+        margin: 10px 0px;
+    }
+    .brand-sale p {
+        padding: 2px;
+    }
+}

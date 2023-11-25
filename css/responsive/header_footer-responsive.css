@@ -1,0 +1,97 @@
+@media (min-width: 1200px) {
+    /* CSS cho máy tính để bàn lớn */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+/* CSS cho máy tính để bàn trung bình */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* CSS cho máy tính xách tay */
+    .fa-user {
+        display: none;
+    }
+    .fa-bars {
+        display: inline !important;
+    }
+    .nav-header {
+        display: none;
+    }
+    header .block {
+        text-align: right;
+    }
+    header .block:first-child {
+        margin-left: 20px;
+        text-align: left;
+    }
+    main {
+        top: 55px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+/* CSS cho màn hình nhỏ, máy tính bảng */
+    .fa-user {
+        display: none;
+    }
+    .fa-bars {
+        display: inline !important;
+    }
+    .nav-header {
+        display: none;
+    }
+    header .block {
+        text-align: right;
+    }
+    header .block:first-child {
+        margin-left: 20px;
+        text-align: left;
+    }
+    main {
+        top: 55px;
+    }
+}
+@media (max-width: 575px) {
+/* CSS cho điện thoại di động */
+    header {
+        height: 70px;
+        justify-content: space-between;
+    }
+    .nav-header {
+        display: none;
+    }
+    .img_trangchu {
+        padding-top: 70px;
+    }
+    .logo-header {
+        flex: 1;
+    }
+    .logo-header img{
+        margin-left: 15px;
+        width: 90%;
+    }
+    .icon-header {
+        flex: 2;
+    }
+    header div i {
+        margin-right: 15px;
+        font-size: 20px !important;
+    }
+    header .block {
+        text-align: right;
+    }
+    .fa-bars {
+        display: inline !important;
+    }
+    .fa-user {
+        display: none;
+    }
+    .fa-magnifying-glass .form-search {
+        bottom: -80px;
+        right: -80px;
+    }
+    header div i:hover {
+        color: black;
+    }
+}
+

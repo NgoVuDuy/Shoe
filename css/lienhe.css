@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container-contact-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.contact > h3{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    color: #5B5B5E;
+    text-align: center;
+}
+.contact > p{
+    color: #000;
+    margin: 10px 0;
+    font-size: 13px;
+    text-align: center;
+}
+.group{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+label{
+    font-weight: 600;
+    color: #5B5B5E;
+    font-size: 13px;
+}
+.group input{
+    border: 2px solid #C4C4C4;
+    background: #fff;
+    border-radius: initial;
+    outline:none;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+}
+textarea{
+    border: 1px solid #C4C4C4;
+    background: #fff;
+    border-radius: initial;
+    padding: 0 10px;
+    width: 100%;
+}
+.btn_lh{
+    margin-top: 10px;
+    height: 50px;
+    border-radius: initial;
+    font-weight: bold;
+    background: #3f3fdb;
+    border-color: #3f3fdb;
+    padding: 0 15px;
+    color:#fff;
+    font-size: 14px;
+}

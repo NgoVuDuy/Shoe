@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a:hover {
+    color: chocolate;
+  }
+.text {
+    margin: 30px 30px;
+    font-size: 25px;
+}
+
+.text .ar {
+    background: linear-gradient(to bottom right,rgba(0, 81, 255, 0.2),rgba(230, 0, 255, 0.1),rgba(149, 255, 0, 0.2));
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 100px;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+.img-gioithieu {
+    border-radius: 20px;
+}
+.ar p:first-child {
+    font-size: 30px;
+}

@@ -1,0 +1,54 @@
+.background {
+  height: 300px;
+  width: 100%;
+  font-size: 40px;
+}
+.header-img {
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+}
+.tieude {
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tieude h1 {
+  font-size: 50px !important;
+  
+}
+.main-nav {
+  margin-bottom: 110px;
+  position: relative;
+
+}
+.tieude h1 {
+  letter-spacing: 7px;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.tieude .all {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 100px;
+  margin-top: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.tieude a {
+  text-decoration: none;
+  color: azure;
+}
+
+.tieude a:hover,
+.tieude .nav1 {
+  color: white;
+}
+.all span a {
+  font-size: 16px ;
+}

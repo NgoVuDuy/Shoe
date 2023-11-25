@@ -1,0 +1,78 @@
+
+body {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+.content {
+    grid-template-columns: 0.8fr 2.2fr;
+    grid-template-areas: "fr1 fr2";
+    margin-top: 20px;
+}
+
+.content .left {
+    grid-area: fr1;
+}
+
+.content .right {
+    grid-area: fr2;
+}
+
+.left .line {
+    font-size: 15px;
+    border-bottom: 1px solid rgb(157, 156, 156);
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.border {
+    border: 1px solid rgba(0, 0, 0, 0.135);
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.border p {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.826);
+}
+
+.nav-news:hover {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.nav-news:hover a {
+    color: white;
+}
+
+.border a {
+    display: block;
+    padding: 10px;
+    color: rgb(43, 41, 41);
+}
+
+
+.border a:hover {
+
+
+}
+
+.relate {
+    margin-top: 15px;
+}
+
+.relate span {
+    font-size: 15px;
+    float: right;
+    width: 75%;
+}
+
+.relate img {
+    width: 60px;
+}
+

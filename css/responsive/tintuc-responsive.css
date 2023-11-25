@@ -1,0 +1,10 @@
+@media (min-width: 992px) and (max-width: 1399px) {
+    /* CSS cho máy tính để bàn trung bình */
+    .relate img {
+       display: none;
+    }
+    .relate span {
+        text-align: left;
+        width: 100%;
+    }
+}

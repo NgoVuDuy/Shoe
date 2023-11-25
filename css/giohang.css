@@ -1,0 +1,33 @@
+.col-5 img {
+  margin-right: 14px;
+}
+.cart-product {
+  display: flex;
+  align-items: center;
+}
+.row {
+  align-items: center;
+}
+ input {
+  width: 40%;
+}
+.col-1 button,
+.col-2 button {
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 0px;
+}
+.col-1 button:hover,
+.col-2 button:hover {
+  opacity: 0.8;
+}
+.container {
+  padding-top: 80px;
+}
+.total {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}

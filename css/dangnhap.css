@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-middle{
+  display:flex;
+  width: 100%;
+  height:100%;
+  justify-content: center;
+}
+.menu-list{
+  display:flex;
+  height: 40px;
+}
+
+.login-form{
+  margin:40px;
+  height: 100%;
+  width: 50%;
+  border: 1px solid #eee;
+}
+.container-login {
+  padding-top: 80px;
+}
+.menu-list > .left, .right{
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.menu-list >.right>a , .menu-list >.left>a{
+  color:#999;
+  text-decoration: none;
+  display:flex;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color:#999;
+}
+.menu-list>.left > a{
+  color:black;
+  
+}
+
+.menu-list>.left>a::before{
+  content:"";
+  position: absolute;
+  height: 1px;
+  background-color:#3f3fdb;
+  bottom: -1px;
+  right:30px;
+  left:30px;
+}
+
+.group{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.group > .line-1 >label{
+  margin-top: 30px;
+}
+.group > div > label{
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.group > div{
+  padding: 0 20px;
+}
+.group > div > input{
+  background:#fafafa;
+  height:30px;
+  padding-left: 15px;;
+  width: 100%;
+  border:2px solid #ececec !important;
+  outline:none;
+}
+
+.group > .line-3 > a{
+  color:#3f3fdb;
+  font-size: 12px;
+  padding-left:5px;
+  font-weight: normal;
+  text-decoration: none;
+}
+.btn_dn{
+  width: 100%;
+  height: 40px;
+  background:black;
+  color:#fff;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 15px;
+  position:relative;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.group >.line-5 >p{
+  text-align: center;
+  color:#999;
+  font-size: 12px;
+  line-height: 1.1;
+  margin-top:20px;
+}
+
+.btn_dn:hover{
+  transform: scale(.98);
+  cursor: pointer;
+}
+.line-break::before{
+  content: "";
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+.line-break{
+  margin:10px 0px;
+  text-align: center;
+  position: relative;
+  max-width: 100%;
+  
+}
+
+.line-break span{
+  font-size: 12px;
+  position: relative;
+  color:#999;
+  padding:1px 10px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.social-media-login{
+  text-align: center;
+  margin-top: 10px;
+  
+}

@@ -1,0 +1,303 @@
+* {
+  font-family: 'Kanit', sans-serif;
+}
+body {
+  margin: 0 auto;
+}
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  font-size: 1.2em;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px rgb(222, 222, 222) solid;
+  z-index: 100;
+}
+header .block {
+  text-align: center;
+}
+header nav {
+  height: 100%;
+}
+header nav a {
+  height: 100%;
+  width: 100px;
+  line-height: 80px;
+  float: left;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+}
+header nav a:hover {
+  background-color: black;
+  color: white !important;
+  font-size: 18.5px;
+}
+header div i {
+  margin-right: 25px;
+}
+header div i:hover {
+  color: rgb(112, 112, 112);
+}
+header .user {
+  position: relative;
+  display: inline-block;
+}
+header .user-option {
+  position: absolute;
+  right: 30px;
+  display: none;
+  background-color: azure;
+}
+header .user-option a {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 30px;
+}
+
+
+footer {
+  display: grid;
+  background: linear-gradient(to bottom right,rgba(0, 81, 255, 0.2),rgba(230, 0, 255, 0.1),rgba(149, 255, 0, 0.2));
+  background-size: cover;
+  color: black;
+  font-size: 18px;
+  margin-top: 50px;
+  padding: 16px;
+
+}
+
+footer h3 {
+  text-transform: uppercase;
+}
+
+footer .block {
+  margin: 10px;
+  margin-left:25px;
+  margin-right:15px;
+}
+.footer-email {
+  margin-bottom: 30px;
+}
+.footer-email input {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px !important;
+}
+.footer-email label{
+  margin-right: 15px;
+}
+.footer-send-mail {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  padding: 10px 0px;
+  border-radius:  20px;
+  flex-wrap: wrap;
+}
+.footer-email input:focus {
+  transform: scale(0.99);
+}
+
+.btn-send-mail {
+  width: 100px !important;
+  line-height: 16.8px;
+  background-color: black;
+  color: white;
+  margin: 10px;
+}
+.btn-send-mail:hover {
+  transform: scale(0.96);
+}
+.logo-footer{
+  width: 170px;
+}
+.fr1 div {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.fr1 i {
+  margin-right: 10px;
+}
+.fr1 a {
+  display: inline-block;
+  text-decoration: none;
+}
+.fr1 a:hover {
+  transform: scale(.99);
+}
+.spacing {
+  padding-top: 5px;
+}
+.fr2, 
+.fr3 {
+  text-align: center;
+}
+.fr2 a,
+.fr3 a {
+  font-size: 17px;
+  text-decoration: none;
+  line-height: 40px;
+}
+.fr2 div:hover,
+.fr3 div:hover {
+  background-color: black;
+  border-radius: 20px;
+  transform: scale(1.1);
+}
+.fr2 div:hover a,
+.fr3 div:hover a {
+  color: white !important;
+}
+.fr4 {
+  text-align: center;
+}
+.fr4 i {
+  padding: 15px;
+  font-size: 25px;
+}
+.fr4 i:hover {
+  transform: scale(1.2);
+}
+.fr4 p {
+  margin-top: 2px;
+}
+.fr4 h3 {
+  margin-bottom: 13px;
+}
+.ft {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top:25px;
+  color: black;
+}
+.fa-solid {
+  font-size: 22px;
+}
+.fa-bars{
+  display: none !important;
+}
+.del {
+  width: 300px !important;
+  box-shadow: none !important;
+  border-radius: 4px !important;
+}
+.chocol_color {
+   color: rgb(112, 112, 112);
+}
+ctn {
+  animation-name: open;
+  animation-duration: 0.2s;
+}
+
+.option {
+  z-index: 100;
+  position: absolute;
+  width: max-content;
+  background-color:white;
+  border: 2px black solid;
+}
+
+.option button {
+  padding: 10px;
+  background-color: white;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+}
+
+.crown {
+  width: max-content;
+  border: 10px black solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+
+}
+.option button:hover {
+  background-color: black;
+  color: white;
+}
+
+.block a {
+  color: black !important; 
+}
+
+
+.margin {
+  margin-top: 14px !important;
+}
+
+.fa-magnifying-glass {
+  position: relative;
+}
+
+.fa-user {
+  width: 19.2px;
+}
+
+.fa-magnifying-glass .form-search {
+  width: max-content;
+  position: absolute;
+  bottom: -50%;
+  right: 300%;
+  animation-name: open;
+  animation-duration: 0.2s;
+}
+.form-group {
+  bottom: -75px;
+  right: 130px;
+  position: absolute;
+}
+.glass-search {
+  height: 36.2px;
+  color: black;
+  position: absolute;
+  right: 0;
+  padding: 0px;
+  bottom: 0;
+  width: 50px;
+}
+.glass {
+  padding: 0px;
+  width: 100%;
+  line-height: 36.2px !important;
+  text-align: center;
+}
+.glass:hover {
+  color: white;
+  background-color:black ;
+  border-radius: 4px;
+}
+.logo-header {
+  flex: 0.8;
+}
+.nav-header {
+  height: 100%;
+  flex: 2.4;
+}
+.icon-header {
+  position: relative;
+  flex: 1;
+}
+
+input {
+  border: 2px #5a5a5a solid !important;
+  font-size: 14px !important;
+}
+
+@keyframes open {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+

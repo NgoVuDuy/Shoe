@@ -1,0 +1,87 @@
+@media (min-width: 1400px){
+    /* CSS cho máy tính để bàn lớn */
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+/* CSS cho máy tính để bàn trung bình */
+    .buy-btn {
+        bottom: 11%;
+    }
+    .buy-btn button {
+        padding: 6px
+    }
+    .brand-sale {
+        display: none;
+    }
+    .btn-send-mail {
+        padding: 0px;
+    }
+    .footer-email input:last-child {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* CSS cho máy tính xách tay */
+    .buy-btn {
+        bottom: 10%;
+    }
+    .buy-btn button {
+        padding: 8px
+    }
+    .footer-send-mail {
+        justify-content: center;
+    }
+    .footer-email input:last-child {
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+/* CSS cho màn hình nhỏ, máy tính bảng */
+    .srcollbar_1 {
+        overflow-x: auto !important;
+    }
+    .not-wrap_1 {
+    flex-wrap: nowrap !important;
+
+    }
+    .brand-sale {
+        bottom: 18%;
+    }
+     .background_col-8 {
+        background: white;
+    }
+    .flex-news button{
+        padding: 4px;
+        margin-bottom: 14px;
+        border-radius: 10px;
+    }
+    .flex-news h1 {
+        font-size: 1.5em !important;
+        margin-top: 14px;
+    }
+    .footer-send-mail {
+        justify-content: center;
+    }
+    .footer-email input:last-child {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 575px) {
+    /* CSS cho điện thoại di động */
+    .row {
+        margin: 0px;
+    }
+    .intro {
+        display: none;
+    }
+    .footer-email input:last-child {
+        margin-top: 10px;
+    }
+    .title {
+        font-size: 20px;
+    }
+        
+}

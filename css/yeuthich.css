@@ -1,0 +1,18 @@
+.pt {
+    padding-top: 40px;
+}
+.product-heart .fa-heart {
+    color: red;
+}
+.container-fluid .row {
+    justify-content: flex-end;
+}
+/* .row {
+    justify-content: center;
+} */
+.row button {
+    color: white;
+    background-color: red;
+    padding: 6px;
+    border: none;
+} 
