@@ -3,9 +3,12 @@ const cartContainer = document.querySelector(".cart-container")
 const clearBtn = document.querySelector(".cart-clear-all")
 const cartItems = JSON.parse(localStorage.getItem("product"))
 
+const total = document.querySelector(".total")
+
+
 const thanhtoanArray = []
 // Đổ dữ liệu vào giỏ hàng
-if(cartItems != null) {
+if(cartItems != null && cartItems.length != 0) {
     cartItems.forEach(cartItem => {
         const productHTML = `
             <div class="row mt-2">
@@ -34,10 +37,12 @@ if(cartItems != null) {
         `;
         cartContainer.innerHTML += productHTML;
     });
+} else {
+    total.style.display = "none"
 }
 const inputNum = document.querySelectorAll(".mt-2 .col-lg-2 input")
 const sum = document.querySelectorAll(".sum")
-const total = document.querySelector(".total")
+
 var sumDefault = 0.0
 sum.forEach((sumItems, index) => {
     sumDefault += parseFloat(sumItems.textContent)
@@ -46,6 +51,8 @@ sum.forEach((sumItems, index) => {
 
 var format = sumDefault.toFixed(6).slice(0, -3) + "." + sumDefault.toFixed(6).slice(-3) + " VND"
 total.textContent = format
+
+
 
 // Xử lý lại số tiền khi người dùng thay đổi số lượng sản phẩm
 inputNum.forEach((input, index) => {
@@ -136,23 +143,26 @@ deleteProduct.forEach((deleteBtn, index) => {
 
 // Đưa mảng chứa thông tin các sản phẩm lên bộ nhớ cục bộ
 const ThanhToanBtn = document.querySelector(".thanhtoan")
-ThanhToanBtn.addEventListener("click", function() {
-    localStorage.removeItem("chitietsanpham")
+ThanhToanBtn.addEventListener("click", function(event) {
+    if(cartItems != null && cartItems.length != 0) {
+        localStorage.removeItem("chitietsanpham")
+        thanhtoanArray.push(total.textContent)
+        cartItems.forEach((cartItem, index) => {
+            const valueProduct = {
+                id: index,
+                name: cartItem.name,
+                img: cartItem.img,
+                sl: inputNum[index].value,
+                productCore: sum[index].textContent,
+            }
+            thanhtoanArray.push(valueProduct)
+            console.log(thanhtoanArray)
+    
+        })
+        localStorage.setItem("total", JSON.stringify(thanhtoanArray))
 
-
-    thanhtoanArray.push(total.textContent)
-    cartItems.forEach((cartItem, index) => {
-        const valueProduct = {
-            id: index,
-            name: cartItem.name,
-            img: cartItem.img,
-            sl: inputNum[index].value,
-            productCore: sum[index].textContent,
-        }
-        thanhtoanArray.push(valueProduct)
-        console.log(thanhtoanArray)
-
-    })
-    localStorage.setItem("total", JSON.stringify(thanhtoanArray))
+    } else {
+        event.preventDefault()
+    }
 
 })
