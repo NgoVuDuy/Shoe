@@ -108,6 +108,15 @@
     .tieude h1 {
         font-size: 30px;
     }
+    .col-7 .sanpham .img_sanpham:hover i.fa-cart-arrow-down,
+    .col-6 .sanpham .img_sanpham:hover i.fa-cart-arrow-down {
+        animation: none;
+
+    }
+    .col-7 .sanpham .img_sanpham:hover i.fa-heart,
+    .col-6 .sanpham .img_sanpham:hover i.fa-heart{
+        animation: none;
+    }
 }
 
 @media (max-width: 460px) {

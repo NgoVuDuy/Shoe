@@ -282,13 +282,13 @@
     from {
         transform: translateX(0px);
     } to {
-        transform: translateX(-55px);
+        transform: translateX(-65px);
     }
 }
 @keyframes add-like {
     from {
         transform: translateX(0px);
     } to {
-        transform: translateX(55px);
+        transform: translateX(65px);
     }
 }

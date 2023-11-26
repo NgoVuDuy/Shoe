@@ -46,6 +46,7 @@ if(productArray != null) {
 //Đổ dữ liệu từ trang chủ và sản phẩm
 productsList.forEach((product, index) => {
     if(idProduct == product.id) {
+        console.log(product)
         totalProduct[0].textContent = product.price
         totalProduct[1].textContent = product.price
         var productHTML = `
