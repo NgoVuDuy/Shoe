@@ -19,7 +19,7 @@ if(heartItems != null) {
         <div class="col-6 col-lg-3 col-md-4">
             <div class="sanpham">
                 <div class="img_sanpham">
-                    <a class="product-link" href="/html/chitietsanpham.html?id=${heartItem.id}">
+                    <a class="product-link" href="chitietsanpham.html?id=${heartItem.id}">
                         <img src="${heartItem.img}" alt="" width="100%" height="100%">
                     </a>
                     <div class="product-cart">
@@ -30,7 +30,7 @@ if(heartItems != null) {
                     </div>   
                 </div>
                 <div class="tensanpham">
-                    <a class="product-link" href="/html/chitietsanpham.html?id=${heartItem.id}"><p>${heartItem.name}</p></a>
+                    <a class="product-link" href="chitietsanpham.html?id=${heartItem.id}"><p>${heartItem.name}</p></a>
                 </div>
                 <div class="danhgia">
                     <i class="fa-solid fa-star"><span>${heartItem.evaluate}</span></i>
@@ -42,7 +42,7 @@ if(heartItems != null) {
                     <p>${heartItem.price}</p>
                 </div>
                 <div class="buy-btn-sale">
-                    <a class="product-link" href="/html/muahang.html"><button>Mua ngay</button></a>
+                    <a class="product-link" href="muahang.html"><button>Mua ngay</button></a>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ productsHot.forEach(product => {
         <div class="col-7 col-sm-5 col-lg-4 col-md-4">
             <div class="sanpham">
                 <div class="img_sanpham">
-                    <a class="product-link" href="/html/chitietsanpham.html?id=${product.id}"><img src="${product.image}" alt="" width="100%" height="100%"></a>
+                    <a class="product-link" href="html/chitietsanpham.html?id=${product.id}"><img src="${product.image}" alt="" width="100%" height="100%"></a>
 
                     <div class="product-cart">
                         <i title="Thêm vào giỏ hàng" class="fa-solid fa-cart-arrow-down"></i>               
@@ -19,7 +19,7 @@ productsHot.forEach(product => {
                     </div>
                 </div>
                 <div class="tensanpham">
-                    <a class="product-link" href="/html/chitietsanpham.html?id=${product.id}"><p>${product.name}</p></a>
+                    <a class="product-link" href="html/chitietsanpham.html?id=${product.id}"><p>${product.name}</p></a>
                 </div>
                 <div class="danhgia">
                     <i class="fa-solid fa-star"><span>${product.evaluate}</span></i>
@@ -31,7 +31,7 @@ productsHot.forEach(product => {
                     <p>${product.price}</p>
                 </div>
                 <div class="buy-btn">
-                    <a class="product-link" href="/html/muahang.html?id=${product.id}"><button>Mua ngay</button></a>
+                    <a class="product-link" href="html/muahang.html?id=${product.id}"><button>Mua ngay</button></a>
                 </div>
             </div>
         </div>
@@ -44,11 +44,11 @@ productsSale.forEach(product => {
     <div class="col-7 col-lg-2 col-md-4 col-sm-5">
         <div class="sanpham">
             <div class="img_sanpham">
-                <a class="product-link" href="/html/chitietsanpham.html?id=${product.id}"><img src="${product.image}" alt="" width="100%" height="100%"></a>
-                <img class="sale" src="/images/sale.png" alt="Sale" width="35%">
+                <a class="product-link" href="html/chitietsanpham.html?id=${product.id}"><img src="${product.image}" alt="" width="100%" height="100%"></a>
+                <img class="sale" src="images/sale.png" alt="Sale" width="35%">
             </div>
             <div class="tensanpham">
-                <a class="product-link" href="/html/chitietsanpham.html?id=${product.id}"><p>${product.name}</p></a>
+                <a class="product-link" href="html/chitietsanpham.html?id=${product.id}"><p>${product.name}</p></a>
             </div>
             <div class="danhgia">
                 <i class="fa-solid fa-star"><span>${product.evaluate}</span></i>
@@ -60,7 +60,7 @@ productsSale.forEach(product => {
                 <p>${product.price}</p>
             </div>
             <div class="buy-btn-sale">
-                <a class="product-link" href="/html/muahang.html?id=${product.id}"><button>Mua ngay</button></a>
+                <a class="product-link" href="html/muahang.html?id=${product.id}"><button>Mua ngay</button></a>
             </div>
         </div>
     </div>

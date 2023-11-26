@@ -94,6 +94,7 @@ productBtn.addEventListener("click", function() {
         }
         productArray.push(product)
         // console.log(productArray)
+        localStorage.removeItem("total")
         localStorage.setItem("chitietsanpham", JSON.stringify(productArray))
         window.location.href = "../html/muahang.html"
     }

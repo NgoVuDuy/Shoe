@@ -91,7 +91,7 @@ clearBtn.addEventListener("click", function() {
             icon: "error",
             title: "Oops...",
             text: "Bạn chưa có sản phẩm nào trong giỏ hàng",
-            footer: '<a href="/html/sanpham.html">Bạn có muốn xem sản phẩm?</a>'
+            footer: '<a href="sanpham.html">Bạn có muốn xem sản phẩm?</a>'
           });
     } else {
         Swal.fire({

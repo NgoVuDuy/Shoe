@@ -39,7 +39,7 @@ buyBtn.addEventListener("click", function() {
                 if(result.isConfirmed)
                 localStorage.removeItem("total")
                 // location.reload()
-                window.location.href ="/index.html"
+                window.location.href ="../index.html"
             })
         } else if (result.isDenied) {
           Swal.fire('Đặt hàng thất bại !', '', 'error')

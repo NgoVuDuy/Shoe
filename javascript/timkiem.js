@@ -35,6 +35,6 @@ search_btn.addEventListener("click", function() {
     if(rsSearch[0] == []) {
         alert("Thông tin tìm kiếm không hợp lệ")
     } else {
-        window.location.href = "/html/timkiem.html"
+        window.location.href = "timkiem.html"
     }
 })
