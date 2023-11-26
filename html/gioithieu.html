@@ -168,9 +168,11 @@
                         <div class="footer-email">
                             <h3>Nhận thông báo ưu đãi</h3>
                             <div class="footer-send-mail">
-                                <!-- <label for="">Email</label> -->
-                                <input type="email" placeholder="Vui lòng nhập email">
-                                <input class="btn-send-mail" type="button" value="Xác nhận">
+                                <form action="">
+                                    <!-- <label for="">Email</label> -->
+                                    <input type="email" required placeholder="Vui lòng nhập email">
+                                    <input class="btn-send-mail" type="submit" value="Xác nhận">
+                                </form>
                             </div>
                         </div>
                         <h3>Theo dõi chúng tôi</h3>
@@ -184,6 +186,7 @@
         </div>
     </footer>
     <script src="../bootstrap-5.0.2-dist/js_bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../javascript/header.js"></script>
     <script src="../javascript/sidebars.js"></script>
     <script type="module" src="../javascript/timkiem.js"></script>

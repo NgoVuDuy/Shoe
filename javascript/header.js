@@ -9,6 +9,16 @@ const icons = document.getElementById("icons")
 const barIcon = document.getElementById("bars")
 const sidebar = document.getElementById("main")
 
+const email = document.querySelector(".footer-send-mail form") 
+
+
+email.addEventListener('submit', function(event) {
+    event.preventDefault();
+    Swal.fire('Thông tin đã được ghi lại', 'Chúng tôi sẽ thông báo ưu đãi sớm nhất cho bạn', 'success')
+})
+
+
+email.s
 var checkClick = false
 
 let count = 0

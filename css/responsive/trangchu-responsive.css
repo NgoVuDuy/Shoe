@@ -35,6 +35,13 @@
     .footer-email input:last-child {
         margin-left: 10px;
     }
+    .flex-news h1 {
+        font-size: 22px !important;
+    }
+    .flex-news button {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
 
 }
 
@@ -48,7 +55,7 @@
 
     }
     .brand-sale {
-        bottom: 18%;
+        bottom: 22%;
     }
      .background_col-8 {
         background: white;
@@ -57,10 +64,12 @@
         padding: 4px;
         margin-bottom: 14px;
         border-radius: 10px;
+        width: 100px;
     }
     .flex-news h1 {
-        font-size: 1.5em !important;
+        font-size: 16px !important;
         margin-top: 14px;
+        font-weight: 600;
     }
     .footer-send-mail {
         justify-content: center;
@@ -81,7 +90,7 @@
         margin-top: 10px;
     }
     .title {
-        font-size: 16px;
+        font-size: 24px;
     }
     #countdown {
         font-size: 12px;

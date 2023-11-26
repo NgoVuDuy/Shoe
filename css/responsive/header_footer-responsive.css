@@ -59,6 +59,12 @@
     .tieude h1 {
         font-size: 40px;
     }
+    footer {
+        font-size: 16px;
+    }
+    .logo-footer {
+        width: 20%;
+    }
 }
 @media (min-width: 461px) and (max-width: 576px) {
 /* CSS cho điện thoại di động */
@@ -117,6 +123,12 @@
     .col-6 .sanpham .img_sanpham:hover i.fa-heart{
         animation: none;
     }
+    footer {
+        font-size: 16px;
+    }
+    .logo-footer {
+        width: 25%;
+    }
 }
 
 @media (max-width: 460px) {
@@ -168,6 +180,12 @@
     }
     .tieude h1 {
         font-size: 24px;
+    }
+    footer {
+        font-size: 16px;
+    }
+    .logo-footer {
+        width: 25%;
     }
     .form-search {
         right: 30px;
