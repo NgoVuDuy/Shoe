@@ -1,4 +1,4 @@
-import { productsHot } from "./data/products-popular.js"
+import { productsList } from "./data/products-all.js"
 
 
 const heartsIcon = document.querySelectorAll(".product-heart")
@@ -35,10 +35,10 @@ heartsIcon.forEach((heartIcon, index) => {
     else {
       const productData = {
         id: index,
-        name: productsHot[index].name,
-        img: productsHot[index].image,
-        price: productsHot[index].price,
-        evaluate: productsHot[index].evaluate
+        name: productsList[index].name,
+        img: productsList[index].image,
+        price: productsList[index].price,
+        evaluate: productsList[index].evaluate
       };
       // Thêm dữ liệu mới vào mảng cũ
       heartItems.push(productData);

@@ -9,16 +9,13 @@
   height: 100%;
 }
 .tieude {
+  width: 100%;
   color: white;
   position: absolute;
   text-align: center;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.tieude h1 {
-  font-size: 50px !important;
-  
 }
 .main-nav {
   margin-bottom: 110px;
@@ -27,7 +24,7 @@
 }
 .tieude h1 {
   letter-spacing: 7px;
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 15px;
 }
 

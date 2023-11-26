@@ -15,19 +15,22 @@ if(cartItems != null) {
                         <p>${cartItem.name}</p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2">
-                    <p><span class= "d-block d-lg-none d-md-none">Đơn giá: </span>${cartItem.price}</p>
+                <div class="col-lg-2 col-md-2 cart-flex">
+                    <span class= "d-block d-lg-none d-md-none"><b>Đơn giá: </b></span>
+                    <p>${cartItem.price}</p>
                 </div>
                 <div class="col-lg-2 col-md-2">
                     <input type="number" value="1" min="1" max="5">
                 </div>
-                <div class="col-lg-2 col-md-2">
-                <span class= "d-block d-lg-none d-md-none">Tổng tiền: </span><p class="sum">${cartItem.price}</p>
+                <div class="col-lg-2 col-md-2 cart-flex">
+                    <span class= "d-block d-lg-none d-md-none"><b>Tổng tiền: </b></span>
+                    <p class="sum">${cartItem.price}</p>
                 </div>
                 <div class="col-lg-1 col-md-12">
                     <button>Xóa</button>
                 </div>
             </div>
+            <hr>
         `;
         cartContainer.innerHTML += productHTML;
     });

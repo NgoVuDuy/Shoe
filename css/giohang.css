@@ -41,3 +41,8 @@
 .cart-product p {
   margin: 0px 0px 0px 20px !important;
 }
+.cart-flex {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0px !important;
+}

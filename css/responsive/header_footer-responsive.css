@@ -1,9 +1,15 @@
-@media (min-width: 1200px) {
+@media (min-width: 1361px) {
     /* CSS cho máy tính để bàn lớn */
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1360px) {
 /* CSS cho máy tính để bàn trung bình */
+    .ctn {
+        display: none;
+    }
+    .option {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -29,7 +35,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
 /* CSS cho màn hình nhỏ, máy tính bảng */
     .fa-user {
         display: none;
@@ -50,8 +56,11 @@
     main {
         top: 55px;
     }
+    .tieude h1 {
+        font-size: 40px;
+    }
 }
-@media (max-width: 575px) {
+@media (min-width: 461px) and (max-width: 576px) {
 /* CSS cho điện thoại di động */
     header {
         height: 70px;
@@ -93,5 +102,67 @@
     header div i:hover {
         color: black;
     }
+    .bgd_color {
+        border-radius: 4px;
+    }
+    .tieude h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    header {
+        height: 70px;
+        justify-content: space-between;
+    }
+    .header-img {
+        margin-top: 70px;
+    }
+    .nav-header {
+        display: none;
+    }
+    .img_trangchu {
+        padding-top: 70px;
+    }
+    .logo-header {
+        flex: 1;
+    }
+    .logo-header img{
+        margin-left: 15px;
+        width: 90%;
+    }
+    .icon-header {
+        flex: 2;
+    }
+    header div i {
+        margin-right: 15px;
+        font-size: 20px !important;
+    }
+    header .block {
+        text-align: right;
+    }
+    .fa-bars {
+        display: inline !important;
+    }
+    .fa-user {
+        display: none;
+    }
+    .fa-magnifying-glass .form-search {
+        bottom: -80px;
+        right: -80px;
+    }
+    header div i:hover {
+        color: black;
+    }
+    .bgd_color {
+        border-radius: 4px;
+    }
+    .tieude h1 {
+        font-size: 24px;
+    }
+    .form-search {
+        right: 30px;
+    }
+
 }
 

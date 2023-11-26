@@ -9,9 +9,11 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 150px;
+    padding: 150px 20px 0px 20px;
 }
-
+.row {
+    justify-content: center;
+}
 .contact > h3{
     font-size: 24px;
     margin: 0;

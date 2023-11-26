@@ -62,7 +62,7 @@
     display: inline-block;
     position: absolute;
     top: 5%;
-    right: -15%;
+    right: -20%;
 }
 .product-cart i {
     color: black;
@@ -73,7 +73,7 @@
     position: absolute;
     display: inline-block;
     top: 5%;
-    left: -15%;
+    left: -20%;
 }
 .product-heart i {
     font-size: 24px;
@@ -273,10 +273,7 @@
     color: black;
 }
 #countdown {
-    background: linear-gradient(to right bottom,rgba(0, 81, 255, 0.2),rgba(230, 0, 255, 0.1),rgba(149, 255, 0, 0.2));
     display: inline-block;
-    border: 2px rgb(199, 199, 199) solid;
-    border-radius: 10px;
     margin-bottom: 10px;
     padding: 4px 8px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;

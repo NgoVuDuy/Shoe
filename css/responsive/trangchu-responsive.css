@@ -81,7 +81,10 @@
         margin-top: 10px;
     }
     .title {
-        font-size: 20px;
+        font-size: 16px;
+    }
+    #countdown {
+        font-size: 12px;
     }
         
 }

@@ -3,6 +3,8 @@ var thanhtoanArray = JSON.parse(localStorage.getItem("total"))
 const containerProduct = document.querySelector(".buy-container")
 const totalProduct = document.querySelectorAll(".buy-total-value")
 
+console.log(thanhtoanArray)
+//Đổ dữ liệu phần giỏ hàng
 if(thanhtoanArray != null) {
     totalProduct[0].textContent = thanhtoanArray[0]
     totalProduct[1].textContent = thanhtoanArray[0]
@@ -10,11 +12,26 @@ if(thanhtoanArray != null) {
     thanhtoanArray.forEach((product, index) => {
         if(index > 0) {
             var productHTML = `
-            <div class="buy-product">
-                <img src="${product.img}" alt="" width="20%">
-                <p>${product.name}</p>
-                <p>${product.productCore}</p>
-                <p>SL: ${product.sl}</p>
+            <div class= "row mt-4">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-6 buy-flex">
+                    <img src="${product.img}" alt="" width="20%">
+                    <p>${product.name}</p>
+                
+                </div>
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2">       
+                    <p>${product.productCore}</p>
+                </div>
+                <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">       
+                    <p>${product.sl}</p>
+                </div>
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2">       
+                    <p>Đen</p>
+                </div>
+                <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">       
+                    <p>39</p>
+                </div>
+            
+            
             </div>
             
             `

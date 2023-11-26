@@ -35,6 +35,11 @@ search_btn.addEventListener("click", function() {
     if(rsSearch[0] == []) {
         alert("Thông tin tìm kiếm không hợp lệ")
     } else {
-        window.location.href = "timkiem.html"
+        if(window.location.pathname == "/index.html") {
+            window.location.href = "./html/timkiem.html"
+        } else {
+            window.location.href = "timkiem.html"
+        }
     }
 })
+

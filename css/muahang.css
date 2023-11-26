@@ -1,11 +1,15 @@
 .container {
     padding-top: 150px;
 }
-.buy-product {
+/* .buy-product {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+} */
+.buy-flex {
+    display: flex;
+    gap: 10px;
 }
 .buy-product p {
     margin: 0px;
@@ -55,4 +59,8 @@
 }
 .row .col-lg-4:last-child {
     border-left: 1px rgb(235, 235, 235) solid;
+}
+.buy-flex img {
+    width: 30%;
+    border-radius: 4px;
 }
