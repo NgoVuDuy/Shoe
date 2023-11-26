@@ -38,7 +38,8 @@ cartsIcon.forEach((cartIcon, index) => {
         id: index,
         name: productsList[index].name,
         img: productsList[index].image,
-        price: productsList[index].price
+        price: productsList[index].price,
+        color: productsList[index].color_0
       };
       // Thêm dữ liệu mới vào mảng kết quả
       cartItems.push(productData);

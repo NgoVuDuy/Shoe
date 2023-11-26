@@ -17,7 +17,13 @@ var checkClickedSize = false
 var soluongProduct
 var imgProduct
 var sizeProduct
+
+
 var productArray = []
+
+var productCartArray = JSON.parse(localStorage.getItem("chuyen-den-gio-hang")) || []
+
+
 
 const urlParams = new URLSearchParams(window.location.search)
 var id = urlParams.get("id")
@@ -42,6 +48,7 @@ productsList.forEach(product => {
     }
 })
 
+// Xử lý khi nhẫn vào ảnh
 productImg.forEach((img, index) => {
     img.addEventListener("click", function() {
         checkClickedImg = true
@@ -62,8 +69,9 @@ productImg.forEach((img, index) => {
         })
     })
 })
-productSize.forEach((size, index) => {
 
+// Xử lý khi nhấn vào size
+productSize.forEach((size, index) => {
     size.addEventListener("click", function() {
         sizeProduct = size.textContent
         checkClickedSize = true
@@ -76,6 +84,9 @@ productSize.forEach((size, index) => {
 })
 
 const productBtn = document.querySelector(".product-buy-now")
+
+const productAddCart = document.querySelector(".product-add-cart")
+
 productBtn.addEventListener("click", function() {
     if(!checkClickedImg || !checkClickedSize) {
         Swal.fire('Bạn chưa chọn kích thước hoặc màu giày !','', 'errors')
@@ -100,3 +111,27 @@ productBtn.addEventListener("click", function() {
     }
 })
 
+productAddCart.addEventListener("click", function() {
+    if(!checkClickedImg || !checkClickedSize) {
+        Swal.fire('Bạn chưa chọn kích thước hoặc màu giày !','', 'errors')
+    } else {
+        // console.log(sizeProduct)
+        // console.log(productColor.textContent)
+        // console.log(imgProduct)
+        // console.log(productNumber.value)
+
+        const product = {
+            name: productName.textContent,
+            price: productPrice.textContent,
+            img: imgProduct,
+            size: sizeProduct,
+            color: productColor.textContent,
+            sl: productNumber.value,
+        }
+        productCartArray.push(product)
+        // console.log(productArray)
+        localStorage.setItem("chuyen-den-gio-hang", JSON.stringify(productCartArray))
+        Swal.fire('Thêm vào giỏ hàng thành công !','', 'success')
+        
+    }
+})

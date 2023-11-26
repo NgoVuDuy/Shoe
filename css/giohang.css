@@ -46,3 +46,10 @@
   gap: 20px;
   margin: 20px 0px !important;
 }
+.container-fluid {
+  padding-top: 80px;
+}
+.container-number {
+  display: flex;
+  gap: 20px;
+}

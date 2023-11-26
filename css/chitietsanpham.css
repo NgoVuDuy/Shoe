@@ -50,3 +50,6 @@
 .product-buy-container {
     display: inline-block;
 }
+.mt {
+    margin-top: 20px;
+}
