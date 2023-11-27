@@ -65,6 +65,18 @@
             </div>
             <a class="icon-heart" href="./html/yeuthich.html"><i title="Yêu thích" class="fa-solid fa-regular fa-heart"></i></a>
             <a href="./html/giohang.html"><i title="Giỏ hàng" class="fa-solid fa-cart-shopping"></i></a>
+
+            <div class="dropdown" id="dropDw">
+                <a href="#" class=" align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong class="header-user-name">User</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item">Xóa tài khoản</a></li>
+                    <li><a class="dropdown-item log-out">Đăng xuất</a></li>
+                </ul>
+            </div>
+
             <i title="Tài khoản" class="fa-solid fa-user">
                 <div class="ctn modal">
                     <div class="crown"></div>
@@ -114,16 +126,24 @@
                     </ul>
                     <hr>
                     <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>User</strong>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="./html/dangnhap.html">Đăng nhập</a></li>
-                        <li><a class="dropdown-item" href="./html/dangky.html">Đăng ký</a></li>
-                        <!-- <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li> -->
-                    </ul>
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                            <strong class="header-user-name">User</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
+                            <div class="log-in-container">
+                                <li><a class="dropdown-item" href="./html/dangnhap.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="./html/dangky.html">Đăng ký</a></li>
+
+                            </div>
+                            <!-- <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li> -->
+                            <div class="log-out-container">
+                                <li><a class="dropdown-item">Xóa tài khoản</a></li>
+                                <li><a class="dropdown-item log-out">Đăng xuất</a></li>
+
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </main>
@@ -297,6 +317,7 @@
     <script src="./javascript/sidebars.js"></script>
     <script type="module" src="./javascript/giohang.js"></script>
     <script type="module"  src="./javascript/yeuthich.js"></script>
+    <!-- <script src="./javascript/dangnhap.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 

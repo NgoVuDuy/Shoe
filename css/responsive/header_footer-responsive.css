@@ -2,7 +2,7 @@
     /* CSS cho máy tính để bàn lớn */
 }
 
-@media (min-width: 992px) and (max-width: 1360px) {
+@media (min-width: 1001px) and (max-width: 1360px) {
 /* CSS cho máy tính để bàn trung bình */
     .ctn {
         display: none;
@@ -10,15 +10,21 @@
     .option {
         display: none;
     }
+    .icon-header {
+        flex: 1.5;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1000px) {
 /* CSS cho máy tính xách tay */
     .fa-user {
         display: none;
     }
     .fa-bars {
         display: inline !important;
+    }
+    #dropDw {
+        display: none !important;
     }
     .nav-header {
         display: none;
@@ -42,6 +48,9 @@
     }
     .fa-bars {
         display: inline !important;
+    }
+    #dropDw {
+        display: none !important;
     }
     .nav-header {
         display: none;
@@ -101,6 +110,9 @@
     .fa-user {
         display: none;
     }
+    #dropDw {
+        display: none !important;
+    }
     .fa-magnifying-glass .form-search {
         bottom: -80px;
         right: -80px;
@@ -135,6 +147,9 @@
     header {
         height: 70px;
         justify-content: space-between;
+    }
+    #dropDw {
+        display: none !important;
     }
     .header-img {
         margin-top: 70px;

@@ -138,7 +138,11 @@ body {
 }
 .fa-eye {
   float: right;
-  transform: translateY(-125%);
+  transform: translateY(-128%);
   opacity: 0.6;
+  font-size: 18px;
+}
+.fa-eye:hover {
+  opacity: 1;
 }
 

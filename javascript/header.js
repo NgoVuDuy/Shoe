@@ -11,7 +11,96 @@ const sidebar = document.getElementById("main")
 
 const email = document.querySelector(".footer-send-mail form") 
 
+const dropdown_form = document.getElementById("dropDw")
 
+const logOutBtn = document.querySelectorAll(".log-out")
+console.log(logOutBtn)
+
+const logInBlock = document.querySelector(".log-in-container")
+const logOutBlock = document.querySelector(".log-out-container")
+
+const  userName = document.querySelectorAll(".header-user-name")
+
+var checkedLogin = localStorage.getItem("checkLoginSuccess")
+console.log(checkedLogin)
+const userNameValue = localStorage.getItem("user-name")
+
+console.log(userNameValue)
+
+if(checkedLogin != null) {
+    if(checkedLogin == "true") {
+        user.style.display = "none";
+        if(dropdown_form != null) {
+
+            dropdown_form.style.display = "inline-block";
+            if(userNameValue != null) {
+                if(userName != null)
+                userName[0].textContent = userNameValue
+                userName[1].textContent = userNameValue
+            }
+        }
+        if(logInBlock != null && logOutBlock != null) {
+            logInBlock.style.display = "none"
+            logOutBlock.style.display = "block"
+
+        }
+
+    }
+}
+if(logOutBtn != null && logOutBtn.length != 0) {
+
+    logOutBtn[0].addEventListener("click", function() {
+        Swal.fire({
+            title: 'Bạn có chắc muốn đăng xuất tài khoản không ?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Có',
+            denyButtonText: `Không`,
+          }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                Swal.fire('Đăng xuất thành công', '', 'success').then((result) => {
+                    if(result.isConfirmed) {
+                        checkedLogin = false
+                        localStorage.setItem("checkLoginSuccess", checkedLogin)
+                        location.reload()
+                    }
+
+                })
+            } else if (result.isDenied) {
+              Swal.fire('Đăng xuất thất bại !', '', 'error')
+            }
+        })
+    })
+    
+}
+if(logOutBtn[1] != null && logOutBtn.length != 0) {
+    
+    logOutBtn[1].addEventListener("click", function() {
+        Swal.fire({
+            title: 'Bạn có chắc muốn đăng xuất tài khoản không ?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Có',
+            denyButtonText: `Không`,
+          }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                Swal.fire('Đăng xuất thành công', '', 'success').then((result) => {
+                    if(result.isConfirmed) {
+                        logInBlock.style.display = "block"
+                        logOutBlock.style.display = "none"
+                        
+                        location.reload()
+                    }
+
+                })
+            } else if (result.isDenied) {
+              Swal.fire('Đăng xuất thất bại !', '', 'error')
+            }
+        })
+    })
+}
 email.addEventListener('submit', function(event) {
     event.preventDefault();
     Swal.fire('Thông tin đã được ghi lại', 'Chúng tôi sẽ thông báo ưu đãi sớm nhất cho bạn', 'success').then((result) => {
