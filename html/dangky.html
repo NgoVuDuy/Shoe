@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ĐĂNG KÝ</title>
+    <title>Đăng ký</title>
     <link href="../images/main-icon.png" rel="shortcut icon">
     <link href="../css/gioithieu.css" rel="stylesheet">  
     <link href="../css/header_footer.css" rel="stylesheet">
@@ -112,7 +112,6 @@
        <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 col-md-10">
-
                 <div class="register_form">
                     
                     <div class="menu_list">
@@ -127,27 +126,34 @@
                         <div class="form_dangky">
                             <div class="group">
                                 <div class="line-1">
-                                    <label for="">HỌ*</label>
-                                    <input type="text" name="" id="" required placeholder ="Nhập Họ">
+                                    <label for="name">Họ và Tên*</label>
+                                    <input type="text" name="" id="name" required placeholder ="Nhập Họ và Tên">
+                                    <p class="notifi notifi-name"></p>
                                 </div>
                                 <div class="line-2">
-                                    <label for="">TÊN*</label>
-                                    <input type="text" name="" id="" required placeholder ="Nhập Tên">
+                                    <label for="phone-number">Số Điện Thoại*</label>
+                                    <input type="tel" name="" id="phone-number" required placeholder ="Nhập Số điện thoại">
+                                    <p class="notifi notifi-sdt"></p>
                                 </div>
                                 <div class="line-3">
-                                    <label for="">SỐ ĐIỆN THOẠI*</label>
-                                    <input type="tel" name="" id="" required placeholder ="Nhập Số điện thoại">
+                                    <label for="email">Email*</label>
+                                    <input type="email" name="" id="email" required placeholder ="Nhập Địa chỉ Email">
+                                    <p class="notifi notifi-email"></p>
                                 </div>
                                 <div class="line-4">
-                                    <label for="">EMAIL</label>
-                                    <input type="email" name="" id="" required placeholder ="Nhập Địa chỉ Email">
+                                    <label for="pwd">Mật Khẩu*</label>
+                                    <input type="password" name="" id="pwd" required placeholder ="Nhập Mật khẩu">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p class="notifi notifi-pwd"></p>
                                 </div>
                                 <div class="line-5">
-                                    <label for="">MẬT KHẨU</label>
-                                    <input type="password" name="" id="" required placeholder ="Nhập Mật khẩu">
+                                    <label for="pwd-again">Nhập Lại Mật Khẩu*</label>
+                                    <input type="password" name="" id="pwd-again" required placeholder ="Nhập Mật khẩu">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p class="notifi notifi-pwd-again"></p>
                                 </div>
                                 <div >
-                                    <button type="submit" class="btn_ttk"> TẠO TÀI KHOẢN</button>
+                                    <button id="reg-btn" type="submit" class="btn_ttk"> TẠO TÀI KHOẢN</button>
                                 </div>
                             </div>
                         </div>
@@ -222,6 +228,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../javascript/header.js"></script>
     <script src="../javascript/sidebars.js"></script>
+    <script src="../javascript/dangky.js"></script>
     <script type="module" src="../javascript/timkiem.js"></script>
 
 </body>

@@ -43,8 +43,8 @@
 }
 .cart-flex {
   display: flex;
-  gap: 20px;
-  margin: 20px 0px !important;
+  gap: 8px;
+  margin: 4px 0px !important;
 }
 .container-fluid {
   padding-top: 80px;

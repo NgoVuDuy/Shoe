@@ -131,4 +131,14 @@ body {
   margin-top: 10px;
   
 }
+.notifi {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.fa-eye {
+  float: right;
+  transform: translateY(-125%);
+  opacity: 0.6;
+}
 

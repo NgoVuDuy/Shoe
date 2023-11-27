@@ -21,7 +21,16 @@ var sizeProduct
 
 var productArray = []
 
-var productCartArray = JSON.parse(localStorage.getItem("chuyen-den-gio-hang")) || []
+// var productCartArray
+
+// productCartArray = JSON.parse(localStorage.getItem("chuyen-den-gio-hang")) || []
+
+// Lấy dữ liệu từ localStorage khi trang được tải hoặc tạo rỗng mảng
+const cartItems = JSON.parse(localStorage.getItem("product")) || [];
+
+if(cartItems != null) {
+    console.log(cartItems)
+}
 
 
 
@@ -121,16 +130,15 @@ productAddCart.addEventListener("click", function() {
         // console.log(productNumber.value)
 
         const product = {
+            id: urlParams.get("id"),
             name: productName.textContent,
             price: productPrice.textContent,
             img: imgProduct,
-            size: sizeProduct,
-            color: productColor.textContent,
-            sl: productNumber.value,
+            color: productColor.textContent
         }
-        productCartArray.push(product)
+        cartItems.push(product)
         // console.log(productArray)
-        localStorage.setItem("chuyen-den-gio-hang", JSON.stringify(productCartArray))
+        localStorage.setItem("product", JSON.stringify(cartItems))
         Swal.fire('Thêm vào giỏ hàng thành công !','', 'success')
         
     }

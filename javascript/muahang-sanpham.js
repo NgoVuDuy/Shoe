@@ -56,16 +56,20 @@ productsList.forEach((product, index) => {
                 <p>${product.name}</p>
             
             </div>
-            <div class="col-12 col-lg-2 col-md-2 col-sm-2">       
+            <div class="col-12 col-lg-2 col-md-2 col-sm-2 cart-flex">  
+                <span class= "d-block d-lg-none d-md-none"><b>Đơn giá: </b></span>
                 <p>${product.price}</p>
             </div>
-            <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">       
+            <div class="col-12 col-lg-1 col-md-1 col-sm-1 cart-flex">
+                <span class= "d-block d-lg-none d-md-none"><b>Số lượng: </b></span>
                 <p>1</p>
             </div>
-            <div class="col-12 col-lg-2 col-md-2 col-sm-2">       
+            <div class="col-12 col-lg-2 col-md-2 col-sm-2 cart-flex">       
+                <span class= "d-block d-lg-none d-md-none"><b>Màu sắc: </b></span>
                 <p>${product.color_0}</p>
             </div>
-            <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">       
+            <div class="col-12 col-lg-1 col-md-1 col-sm-1 cart-flex">
+                <span class= "d-block d-lg-none d-md-none"><b>Size: </b></span>
                 <p>39</p>
             </div>
         

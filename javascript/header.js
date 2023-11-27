@@ -99,9 +99,24 @@ document.addEventListener('DOMContentLoaded', function () {
         // Nếu kích thước màn hình nằm trong khoảng từ 992px đến 1360px
         user.addEventListener('click', function (event) {
           // Chuyển hướng đến URL mong muốn
-            if(window.location.pathname == "/Shoe/index.html") {
+            if(window.location.pathname == "/") {
+
                 window.location.href = "./html/dangnhap.html"
+
+            }else if(window.location.pathname == "/index.html") {
+
+                window.location.href = "./html/dangnhap.html"
+
+            }else if(window.location.pathname == "/Shoe/") {
+
+                window.location.href = "./html/dangnhap.html"
+
+            }else if(window.location.pathname == "/Shoe/index.html") {
+
+                window.location.href = "./html/dangnhap.html"
+
             } else {
+                
                 window.location.href = "dangnhap.html"
             }
         });

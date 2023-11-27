@@ -18,16 +18,20 @@ if(thanhtoanArray != null) {
                     <p>${product.name}</p>
                 
                 </div>
-                <div class="col-12 col-lg-2 col-md-2 col-sm-2">       
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2">
+                    <span class= "d-block d-lg-none d-md-none"><b>Đơn giá: </b></span>
                     <p>${product.productCore}</p>
                 </div>
-                <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">       
+                <div class="col-12 col-lg-1 col-md-1 col-sm-1 "> 
+                    <span class= "d-block d-lg-none d-md-none"><b>Số lượng: </b></span>
                     <p>${product.sl}</p>
                 </div>
-                <div class="col-12 col-lg-2 col-md-2 col-sm-2">       
-                    <p>Đen</p>
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2">
+                    <span class= "d-block d-lg-none d-md-none"><b>Màu sắc: </b></span>
+                    <p>${product.color}</p>
                 </div>
-                <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">       
+                <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">
+                    <span class= "d-block d-lg-none d-md-none"><b>Size: </b></span>
                     <p>39</p>
                 </div>
             
