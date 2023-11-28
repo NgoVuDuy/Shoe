@@ -47,6 +47,16 @@
             </div>
             <a class="icon-heart" href="./yeuthich.html"><i title="Yêu thích" class="fa-solid fa-regular fa-heart"></i></a>
             <a href="./giohang.html"><i title="Giỏ hàng" class="fa-solid fa-cart-shopping"></i></a>
+            <div class="dropdown" id="dropDw">
+                <a href="#" class=" align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong class="header-user-name">User</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item delete-user">Xóa tài khoản</a></li>
+                    <li><a class="dropdown-item log-out">Đăng xuất</a></li>
+                </ul>
+            </div>
             <i title="Tài khoản" class="fa-solid fa-user">
                 <div class="ctn modal">
                     <div class="crown"></div>
@@ -94,16 +104,24 @@
                     </ul>
                     <hr>
                     <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>User</strong>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="./dangnhap.html">Đăng nhập</a></li>
-                        <li><a class="dropdown-item" href="./dangky.html">Đăng ký</a></li>
-                        <!-- <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li> -->
-                    </ul>
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                            <strong class="header-user-name">User</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light text-small shadow go-down" aria-labelledby="dropdownUser1">
+                            <div class="log-in-container">
+                                <li><a class="dropdown-item" href="./html/dangnhap.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="./html/dangky.html">Đăng ký</a></li>
+
+                            </div>
+                            <!-- <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li> -->
+                            <div class="log-out-container">
+                                <li><a class="dropdown-item delete-user">Xóa tài khoản</a></li>
+                                <li><a class="dropdown-item log-out">Đăng xuất</a></li>
+
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </main>
@@ -135,6 +153,7 @@
                                         <input type="password" id="pwd-login" required placeholder="Nhập Mật khẩu">
                                     </div>
                                     <div class="line-3">
+                                        <i class="fa-solid fa-eye"></i>
                                         <a href="#">Quên mật khẩu?</a>
                                     </div>
                                     <div class="line-4">

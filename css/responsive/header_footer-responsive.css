@@ -2,7 +2,7 @@
     /* CSS cho máy tính để bàn lớn */
 }
 
-@media (min-width: 1001px) and (max-width: 1360px) {
+@media (min-width: 1050px) and (max-width: 1360px) {
 /* CSS cho máy tính để bàn trung bình */
     .ctn {
         display: none;
@@ -15,7 +15,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1050px) {
 /* CSS cho máy tính xách tay */
     .fa-user {
         display: none;

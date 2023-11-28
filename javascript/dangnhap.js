@@ -35,3 +35,13 @@ loginBtn.addEventListener("click", function(event) {
 })
 
 console.log(userArray)
+// Truy vấn con mắt xem mật khẩu
+const eyeBtn = document.querySelector(".fa-eye") 
+
+// Tạo chức năng xem mật khẩu trong 1s
+eyeBtn.addEventListener("click", function() {
+    inputPwdLogin.type = "text"
+    setTimeout(() => {
+        inputPwdLogin.type = "password";
+    }, 1000);
+})

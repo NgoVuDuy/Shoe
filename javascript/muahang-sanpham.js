@@ -19,18 +19,21 @@ if(productArray != null) {
                     <div class="col-12 col-lg-6 col-md-6 col-sm-6 buy-flex">
                         <img src="${productArray[0].img}" alt="" width="20%">
                         <p>${product.name}</p>
-                    
                     </div>
-                    <div class="col-12 col-lg-2 col-md-2 col-sm-2">       
+                    <div class="col-12 col-lg-2 col-md-2 col-sm-2 cart-flex">
+                        <span class= "d-block d-lg-none d-md-none d-sm-none"><b>Đơn giá: </b></span>
                         <p>${product.price}</p>
                     </div>
-                    <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">       
+                    <div class="col-12 col-lg-1 col-md-1 col-sm-1 cart-flex">
+                        <span class= "d-block d-lg-none d-md-none d-sm-none"><b>Số lượng: </b></span>
                         <p>${productArray[0].sl}</p>
                     </div>
-                    <div class="col-12 col-lg-2 col-md-2 col-sm-2">       
+                    <div class="col-12 col-lg-2 col-md-2 col-sm-2 cart-flex">
+                        <span class= "d-block d-lg-none d-md-none d-sm-none"><b>Màu sắc: </b></span>
                         <p>${productArray[0].color}</p>
                     </div>
-                    <div class="col-12 col-lg-1 col-md-1 col-sm-1 ">       
+                    <div class="col-12 col-lg-1 col-md-1 col-sm-1 cart-flex">
+                        <span class= "d-block d-lg-none d-md-none d-sm-none"><b>Kích thước: </b></span>
                         <p>${productArray[0].size}</p>
                     </div>
                 
@@ -57,23 +60,21 @@ productsList.forEach((product, index) => {
             
             </div>
             <div class="col-12 col-lg-2 col-md-2 col-sm-2 cart-flex">  
-                <span class= "d-block d-lg-none d-md-none"><b>Đơn giá: </b></span>
+                <span class= "d-block d-lg-none d-md-none d-sm-none"><b>Đơn giá: </b></span>
                 <p>${product.price}</p>
             </div>
             <div class="col-12 col-lg-1 col-md-1 col-sm-1 cart-flex">
-                <span class= "d-block d-lg-none d-md-none"><b>Số lượng: </b></span>
+                <span class= "d-block d-lg-none d-md-none d-sm-none"><b>Số lượng: </b></span>
                 <p>1</p>
             </div>
             <div class="col-12 col-lg-2 col-md-2 col-sm-2 cart-flex">       
-                <span class= "d-block d-lg-none d-md-none"><b>Màu sắc: </b></span>
+                <span class= "d-block d-lg-none d-md-none d-sm-none"><b>Màu sắc: </b></span>
                 <p>${product.color_0}</p>
             </div>
             <div class="col-12 col-lg-1 col-md-1 col-sm-1 cart-flex">
-                <span class= "d-block d-lg-none d-md-none"><b>Size: </b></span>
+                <span class= "d-block d-lg-none d-md-none d-sm-none"><b>Size: </b></span>
                 <p>39</p>
             </div>
-        
-        
         </div>
         
         `

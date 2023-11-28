@@ -22,7 +22,7 @@ productsList.forEach(product => {
             <div class="danhgia">
                 <i class="fa-solid fa-star"><span>${product.evaluate}</span></i>
             </div>
-            <div class="brand">
+            <div class="brand-sale">
                 <p>NiKe</p>
             </div>
             <div class="giatien">

@@ -14,7 +14,6 @@ const email = document.querySelector(".footer-send-mail form")
 const dropdown_form = document.getElementById("dropDw")
 
 const logOutBtn = document.querySelectorAll(".log-out")
-console.log(logOutBtn)
 
 const logInBlock = document.querySelector(".log-in-container")
 const logOutBlock = document.querySelector(".log-out-container")
@@ -22,7 +21,7 @@ const logOutBlock = document.querySelector(".log-out-container")
 const  userName = document.querySelectorAll(".header-user-name")
 
 var checkedLogin = localStorage.getItem("checkLoginSuccess")
-console.log(checkedLogin)
+
 const userNameValue = localStorage.getItem("user-name")
 
 console.log(userNameValue)
@@ -44,7 +43,6 @@ if(checkedLogin != null) {
             logOutBlock.style.display = "block"
 
         }
-
     }
 }
 if(logOutBtn != null && logOutBtn.length != 0) {
@@ -88,9 +86,12 @@ if(logOutBtn[1] != null && logOutBtn.length != 0) {
             if (result.isConfirmed) {
                 Swal.fire('Đăng xuất thành công', '', 'success').then((result) => {
                     if(result.isConfirmed) {
-                        logInBlock.style.display = "block"
-                        logOutBlock.style.display = "none"
+                        // logInBlock.style.display = "block"
+                        // logOutBlock.style.display = "none"
                         
+                        // location.reload()
+                        checkedLogin = false
+                        localStorage.setItem("checkLoginSuccess", checkedLogin)
                         location.reload()
                     }
 
@@ -221,3 +222,50 @@ document.addEventListener('DOMContentLoaded', function () {
 
 console.log(window.location.pathname)
 
+//Tạo chức năng xóa tài 
+const deleteAccount = document.querySelectorAll(".delete-user")
+
+const usersAr = JSON.parse(localStorage.getItem("userLogin"))
+
+if(deleteAccount != null) {
+    deleteAccount.forEach((deleteBtn, index) =>{
+        deleteBtn.addEventListener("click", function(event) {
+            if(usersAr != null && usersAr.length != 0)
+            usersAr.forEach((user, index) => {
+                if(user.user == userNameValue) {
+                    Swal.fire({
+                        title: 'Bạn có chắc muốn xóa tài khoản không ?',
+                        showDenyButton: true,
+                        showCancelButton: true,
+                        confirmButtonText: 'Có',
+                        denyButtonText: `Không`,
+                    }).then((result) => {
+                        /* Read more about isConfirmed, isDenied below */
+                        if (result.isConfirmed) {
+                            Swal.fire('Xóa tài khoản thành công', '', 'success').then((result) => {
+                                if(result.isConfirmed) {
+                                    usersAr.splice(index, 1)
+                                    localStorage.setItem("userLogin", JSON.stringify(usersAr))
+
+                                    checkedLogin = false
+                                    localStorage.setItem("checkLoginSuccess", checkedLogin)
+                                    location.reload()
+                                    // logInBlock.style.display = "block"
+                                    // logOutBlock.style.display = "none"
+                                    
+                                    // location.reload()
+                                }
+            
+                            })
+                        } else if (result.isDenied) {
+                          Swal.fire('Đăng xuất thất bại !', '', 'error')
+                        }
+                    })
+                }
+            })
+        })
+    })
+}
+
+console.log(usersAr)
+// localStorage.clear()

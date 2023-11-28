@@ -17,7 +17,7 @@ if(cartItems != null && cartItems.length != 0) {
     cartItems.forEach(cartItem => {
         const productHTML = `
             <div class="row mt-2">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-3">
                     <div class="cart-product">
                         <img src="${cartItem.img}" alt="" width="25%">
                         <p>${cartItem.name}</p>

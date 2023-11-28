@@ -49,6 +49,16 @@
             </div>
             <a class="icon-heart" href="./yeuthich.html"><i title="Yêu thích" class="fa-solid fa-regular fa-heart"></i></a>
             <a href="./giohang.html"><i title="Giỏ hàng" class="fa-solid fa-cart-shopping"></i></a>
+            <div class="dropdown" id="dropDw">
+                <a href="#" class=" align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong class="header-user-name">User</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item delete-user">Xóa tài khoản</a></li>
+                    <li><a class="dropdown-item log-out">Đăng xuất</a></li>
+                </ul>
+            </div>
             <i title="Tài khoản" class="fa-solid fa-user">
                 <div class="ctn modal">
                     <div class="crown"></div>
@@ -96,16 +106,24 @@
                     </ul>
                     <hr>
                     <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>User</strong>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="./dangnhap.html">Đăng nhập</a></li>
-                        <li><a class="dropdown-item" href="./dangky.html">Đăng ký</a></li>
-                        <!-- <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li> -->
-                    </ul>
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                            <strong class="header-user-name">User</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light text-small shadow go-down" aria-labelledby="dropdownUser1">
+                            <div class="log-in-container">
+                                <li><a class="dropdown-item" href="dangnhap.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="dangky.html">Đăng ký</a></li>
+
+                            </div>
+                            <!-- <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li> -->
+                            <div class="log-out-container">
+                                <li><a class="dropdown-item delete-user">Xóa tài khoản</a></li>
+                                <li><a class="dropdown-item log-out">Đăng xuất</a></li>
+
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </main>
@@ -122,7 +140,7 @@
     <div class="container">
         <div class="row mt-5 mb-5">
             <div class="col-3 d-none d-lg-block">
-                <div class="filter">
+                <!-- <div class="filter">
                     <h6>Sắp Xếp</h6>
                     <span><input type="radio">Giá từ cao đến thấp</span>
                     <span><input type="radio">Giá từ thấp đến cao</span>
@@ -140,15 +158,15 @@
                     <h6>Phụ kiện</h6>
                     <span><input type="radio">Dây giày</span>
                     <span><input type="radio">Khóa giày</span>
-                </div>
+                </div> -->
             </div>
-            <div class="col-12 col-lg-9 col-md-12 background_col-8">
-                <div class="row modal">
+            <div class="col-12 col-lg-12 col-md-12 background_col-8">
+                <!-- <div class="row modal">
                     <div class="col-3">Sắp xếp</div>
                     <div class="col-3">Phân loại</div>
                     <div class="col-3">Thương hiệu</div>
                     <div class="col-3">Phụ kiện</div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div id="products" class="row">
                 </div>

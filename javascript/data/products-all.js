@@ -15,7 +15,7 @@ const productsList = [
     {
         id: "5",
         name: "Giày Thể Thao Nam Hunter Street đế #BÀO",
-        price: "835.000 VNĐ",
+        price: "1.835.000 VNĐ",
         evaluate: "5.0",
         image: "../images/tatcasanpham/sanpham5.webp",
         image_1:"../images/tatcasanpham/sanpham5_1.webp",
@@ -29,7 +29,7 @@ const productsList = [
     { 
         id: "6",
         name: "Giày Thể Thao Nam Biti's Hunter X Festive ",
-        price: "935.000 VNĐ",
+        price: "1.935.000 VNĐ",
         evaluate: "4.0",
         image: "../images/tatcasanpham/sanpham6.webp",
         image_1:"../images/tatcasanpham/sanpham6_1.webp",
@@ -60,7 +60,7 @@ const productsList = [
     {
         id: "13",
         name: "Giày thể thao Just Do It ",
-        price: "980.000 VNĐ",
+        price: "1.980.000 VNĐ",
         evaluate: "4.9",
         image: "../images/tatcasanpham/sanpham13.webp",
         image_1:"../images/tatcasanpham/sanpham13_1.webp",
@@ -72,7 +72,7 @@ const productsList = [
     {
         id: "20",
         name: "Giày Thể Thao Nữ Hunter X - X-NITE 22 ",
-        price: "935.000 VNĐ",
+        price: "1.935.000 VNĐ",
         evaluate: "4.8",
         image: "../images/tatcasanpham/sanpham20.webp",
         image_1:"../images/tatcasanpham/sanpham20_1.webp",
@@ -130,7 +130,7 @@ const productsList = [
     { 
         id: "7",
         name: "Giày Thể Thao Nam Biti's Hunter X 2k22 ",
-        price: "980.00 VNĐ",
+        price: "1.980.00 VNĐ",
         evaluate: "4.2",
         image: "../images/tatcasanpham/sanpham7.webp",
         image_1:"../images/tatcasanpham/sanpham7_1.webp",
@@ -177,7 +177,7 @@ const productsList = [
     {
         id: "14",
         name: "Giày nữ Ulzzang Fine  ",
-        price: "350.000 VNĐ",
+        price: "1.350.000 VNĐ",
         evaluate: "4.1",
         image: "../images/tatcasanpham/sanpham14.webp",
         brand:" VEILISR",
@@ -187,7 +187,7 @@ const productsList = [
     {
         id: "15",
         name: "Giày Slip on vải sang trọng",
-        price: "290.000 VNĐ",
+        price: "1.290.000 VNĐ",
         evaluate: "4.0",
         image: "../images/tatcasanpham/sanpham15.webp",
         image_1:"../images/tatcasanpham/sanpham15_1.webp",
@@ -239,7 +239,7 @@ const productsList = [
     {
         id: "19",
         name: "Giày Thể Thao Nữ Biti's Hunter Core HSW002400 ",
-        price: "750.000 VNĐ",
+        price: "1.750.000 VNĐ",
         evaluate: "4.9",
         image: "../images/tatcasanpham/sanpham19.webp",
         image_1:"../images/tatcasanpham/sanpham19_1.webp",
@@ -253,7 +253,7 @@ const productsList = [
     {
         id: "21",
         name: "Giày Bóng Đá Nam Biti's DSMH11100",
-        price: "765.000 VNĐ",
+        price: "1.765.000 VNĐ",
         evaluate: "5.0",
         image: "../images/tatcasanpham/sanpham21.webp",
         image_1:"../images/tatcasanpham/sanpham21_1.webp",
@@ -269,7 +269,7 @@ const productsList = [
     {
         id: "22",
         name: "Giày Đá Bóng Nam Biti's HSM003600",
-        price: "686.000 VNĐ",
+        price: "1.686.000 VNĐ",
         evaluate: "4.9",
         image: "../images/tatcasanpham/sanpham22.webp",
         image_1: "../images/tatcasanpham/sanpham22_1.webp",
@@ -283,7 +283,7 @@ const productsList = [
     {
         id: "23",
         name: "Giày Bóng Đá Nam Biti's DSMH02401",
-        price: "680.000 VNĐ",
+        price: "1.680.000 VNĐ",
         evaluate: "4.5",
         image: "../images/tatcasanpham/sanpham23.webp",
         image_1: "../images/tatcasanpham/sanpham23_1.webp",
@@ -297,7 +297,7 @@ const productsList = [
     {
         id: "24",
         name: "Giày Bóng Đá Nam Biti's DSMH09600",
-        price: "780.000 VNĐ",
+        price: "1.780.000 VNĐ",
         evaluate: "4.9",
         image: "../images/tatcasanpham/sanpham24.webp",
         image_1: "../images/tatcasanpham/sanpham24_1.jpg",
@@ -315,27 +315,6 @@ const productsList = [
         describe:"Ôm sát chân, phong cách hiện đại phù cho mọi lứa tuổi, nhiều màu sắc để lựa chọn. ",
     },
     {
-        id: "25",
-        name: "Dép Eva Phun Nữ Biti's BEW000500",
-        price: "219.000 VNĐ",
-        evaluate: "4.5",
-        image: "../images/tatcasanpham/sanpham25.webp",
-        brand:"Bitis",
-        color_0:"Nâu",
-        describe:"Bên cạnh những đôi giày sành điệu, sandal hay cao gót quyến rũ, điệu đà thì những đôi dép nữ lại là món đồ tuy đơn giản nhưng không thể thiếu trong tủ giày của mỗi cô gái. Bởi tính tiện dụng, dễ mang và thoải mái cho cả những ngày nắng hay mưa, Dép Eva Phun Nữ Biti’s BEW00500 với thiết kế đơn giản nhưng vô cùng thời trang xứng đáng là sự lựa chọn hoàn hảo cho các cô nàng.  ",
-    },
-    {
-        id: "26",
-        name: "Giày Thể Thao Thông Dụng Nam Nữ Biti's Basic",
-        price: "399.000 VNĐ",
-        evaluate: "4.9",
-        image: "../images/tatcasanpham/sanpham26.png",
-        image_1: "../images/tatcasanpham/sanpham26_1.webp",
-        brand:"Bitis",
-        color_0:"Trắng",
-        describe:"Mẫu giày thể thao giá rẻ cho đối tượng là học sinh, Quai: Lưới kết hợp Si, Đế chất liệu PVC được sử dụng công nghệ phun liệu đế dính vào quai. Có thể do màn hình và điều kiện ánh sáng khác nhau, màu sắc thực tế của sản phẩm có thể chênh lệch khoảng từ 3 đến 5%"
-    },
-    {
         id: "27",
         name: "Giày thể thao chạy bộ Adidas cho nam và nữ ",
         price: "1.250.000 VNĐ",
@@ -348,21 +327,9 @@ const productsList = [
         describe:"Ôm sát chân, dễ vận động phù hợp cho mọi lứa tuổi.",
     },
     {
-        id: "28",
-        name: "Giày thể thao nữ siêu nhẹ êm chân TOKYOLIFE",
-        price: "556.000 VNĐ",
-        evaluate: "4.5",
-        image: "../images/tatcasanpham/sanpham28.webp",
-        image_1: "../images/tatcasanpham/sanpham28_1.webp",
-        brand:"TOKYOLIFE",
-        color_0:"Hồng ",
-        color_1:"Trắng",
-        describe:"Độ bền cao, lót giày êm ái. Chạy bộ, tập thể dục, chơi thể thao hay đi chơi, đi làm đều phù hợp.",
-    },
-    {
         id: "29",
         name: "Giày thể thao nữ chất liệu vải dệt cao cấp thoáng khí TOKYOLIFE",
-        price: "595.000 VNĐ",
+        price: "1.595.000 VNĐ",
         evaluate: "4.9",
         image: "../images/tatcasanpham/sanpham29.webp",
         image_1: "../images/tatcasanpham/sanpham29_1.webp",
@@ -374,7 +341,7 @@ const productsList = [
     {
         id: "30",
         name: "Giày thể thao Nam TOKYOLIFE siêu nhẹ êm chân chống trượt",
-        price: "524.000 VNĐ",
+        price: "1.524.000 VNĐ",
         evaluate: "4.8",
         image: "../images/tatcasanpham/sanpham30.webp",
         image_1: "../images/tatcasanpham/sanpham30_1.webp",
@@ -401,7 +368,10 @@ const productsList = [
         price: "1.890.000 VND",
         evaluate: "4.7",
         image: "../images/tatcasanpham/sanpham32.jpg",
-        brand: ""
+        brand: "PUMA",
+        color_0:"Trắng",
+        describe:"Bề mặt lớp lót được làm từ da thật kết hợp lớp xốp thoáng khí có than hoạt tính kháng khuẩn và thấm hút mồ hôi.",
+
     },
     {
         id: "33",
@@ -409,7 +379,10 @@ const productsList = [
         price: "5.599.000 VND",
         evaluate: "2.1",
         image: "../images/tatcasanpham/sanpham33.jpg",
-        brand: ""
+        brand: "PUMA",
+        color_0:"Trắng",
+        describe:"Bề mặt lớp lót được làm từ da thật kết hợp lớp xốp thoáng khí có than hoạt tính kháng khuẩn và thấm hút mồ hôi.",
+
     },
     {
         id: "34",
@@ -417,15 +390,9 @@ const productsList = [
         price: "1.235.000 VND",
         evaluate: "4.1",
         image: "../images/tatcasanpham/sanpham34.jpg",
-        brand: ""
-    },
-    {
-        id: "35",
-        name: "Giày nam phù hợp mọi lứa tuổi",
-        price: "999.000 VND",
-        evaluate: "2.1",
-        image: "../images/tatcasanpham/sanpham35.jpg",
-        brand: ""
+        brand: "PUMA",
+        color_0:"Trắng",
+        describe:"Bề mặt lớp lót được làm từ da thật kết hợp lớp xốp thoáng khí có than hoạt tính kháng khuẩn và thấm hút mồ hôi.",
     },
     {
         id: "36",
@@ -433,7 +400,10 @@ const productsList = [
         price: "8.999.999 VND",
         evaluate: "2.1",
         image: "../images/tatcasanpham/sanpham36.jpg",
-        brand: ""
+        brand: "PUMA",
+        color_0:"Trắng",
+        describe:"Bề mặt lớp lót được làm từ da thật kết hợp lớp xốp thoáng khí có than hoạt tính kháng khuẩn và thấm hút mồ hôi.",
+
     }
 ]
 // Xuất mảng 

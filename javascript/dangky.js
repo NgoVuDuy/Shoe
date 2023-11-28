@@ -37,13 +37,13 @@ inputName.addEventListener("input" ,function(event) {
         checkInfoName = false
     }
     else if(!namePattern.test(inputName.value)) {
-        notifi[0].textContent = "Tài khoản không bao gồm kí tự đặt biệt và khoảng trắng !"
+        notifi[0].textContent = "Họ tên không bao gồm kí tự đặt biệt và khoảng trắng !"
         notifi[0].style.color = "red"
         checkInfoName = false
 
     }
-    else if(inputName.value.length < 8) {
-        notifi[0].textContent = "Độ dài phải trên 8 ký tự !"
+    else if(inputName.value.length < 4 || inputName.value.length > 8) {
+        notifi[0].textContent = "Độ dài phải từ 4 đến 8 ký tự !"
         notifi[0].style.color = "red"
         checkInfoName = false
 
@@ -183,7 +183,11 @@ regBtn.addEventListener("click", function(event) {
         userArray.push(inforUser)
         // Đưa thông tin đăng nhập người dùng lên local Storage
         localStorage.setItem("userLogin", JSON.stringify(userArray))
-        Swal.fire("Tạo tài khoản thành công", "", "success")
+        Swal.fire("Tạo tài khoản thành công", "", "success").then((result) => {
+            if(result.isConfirmed) {
+                location.reload()
+            }
+        })
 
     } else {
         Swal.fire("Vui lòng kiểm tra lại thông tin", "", "error")

@@ -34,7 +34,7 @@ heartsIcon.forEach((heartIcon, index) => {
 
     else {
       const productData = {
-        id: index,
+        id: productsList[index].id,
         name: productsList[index].name,
         img: productsList[index].image,
         price: productsList[index].price,
@@ -60,7 +60,6 @@ heartsIcon.forEach((heartIcon, index) => {
         },
         onClick: function(){} // Callback after click
       }).showToast();
-
     }
   });
 });

@@ -18,10 +18,7 @@ if(results != null) {
                         <div class="img_sanpham">
                             <a class="product-link" href="chitietsanpham.html?id=${result.id}">
                                 <img src="${result.image}" alt="" width="100%" height="100%">
-                            </a>
-                            <div class="product-cart">
-                                <i title="Thêm vào giỏ hàng" class="fa-solid fa-cart-arrow-down"></i>               
-                            </div>   
+                            </a>  
                         </div>
                         <div class="tensanpham">
                             <a class="product-link" href="chitietsanpham.html?id=${result.id}"><p>${result.name}</p></a>

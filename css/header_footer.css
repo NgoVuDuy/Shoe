@@ -296,6 +296,7 @@ ctn {
 .log-out-container {
   display: none;
 }
+
 input {
   border: 2px #5a5a5a solid !important;
   font-size: 14px !important;

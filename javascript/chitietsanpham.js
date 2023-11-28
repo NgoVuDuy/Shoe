@@ -139,7 +139,29 @@ productAddCart.addEventListener("click", function() {
         cartItems.push(product)
         // console.log(productArray)
         localStorage.setItem("product", JSON.stringify(cartItems))
-        Swal.fire('Thêm vào giỏ hàng thành công !','', 'success')
+        Swal.fire('Thêm vào giỏ hàng thành công','', 'success')
         
     }
+})
+const heartItems = JSON.parse(localStorage.getItem("like")) || [];
+
+
+const productLikeBtn = document.querySelector(".product-add-like")
+
+productLikeBtn.addEventListener("click", function() {
+        const productData = {
+            id: urlParams.get("id"),
+            name: productName.textContent,
+            img: productImg[0].src,
+            price: productPrice.textContent,
+            evaluate: "4.8"
+        };
+        // Thêm dữ liệu mới vào mảng cũ
+        heartItems.push(productData);
+        
+        // Lưu mảng vào localStorage
+        localStorage.setItem("like", JSON.stringify(heartItems));
+        Swal.fire('Thêm vào yêu thích thành công','', 'success')
+    
+
 })
