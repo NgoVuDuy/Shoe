@@ -12,8 +12,11 @@ var idProduct = url.get("id")
 if(productArray != null) {
     productsList.forEach((product, index) => {
         if(productArray[0].ID == product.id) {
-            totalProduct[0].textContent = product.price
-            totalProduct[1].textContent = product.price
+            var priceTotal = parseFloat(product.price) * parseFloat(productArray[0].sl)
+            var formatTotal =  priceTotal.toFixed(6).slice(0, -3) + "." + priceTotal.toFixed(6).slice(-3) + " VND"
+
+            totalProduct[0].textContent = formatTotal
+            totalProduct[1].textContent = formatTotal
             var productHTML = `
                 <div class= "row mt-4">
                     <div class="col-12 col-lg-6 col-md-6 col-sm-6 buy-flex">

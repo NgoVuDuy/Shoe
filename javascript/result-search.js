@@ -42,5 +42,4 @@ if(results != null) {
         });
         
     }
-
 }

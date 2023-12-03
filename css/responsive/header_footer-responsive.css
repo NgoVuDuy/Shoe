@@ -1,5 +1,8 @@
 @media (min-width: 1361px) {
     /* CSS cho máy tính để bàn lớn */
+    main {
+        display: none;
+    }
 }
 
 @media (min-width: 1050px) and (max-width: 1360px) {
@@ -12,6 +15,9 @@
     }
     .icon-header {
         flex: 1.5;
+    }
+    main {
+        display: none;
     }
 }
 

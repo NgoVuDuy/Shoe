@@ -105,4 +105,3 @@ buyBtn1.forEach((button, index) => {
         localStorage.removeItem("chitietsanpham")
     })
 })
-

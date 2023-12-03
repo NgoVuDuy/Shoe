@@ -112,7 +112,6 @@ email.addEventListener('submit', function(event) {
 })
 
 
-email.s
 var checkClick = false
 
 let count = 0
@@ -266,6 +265,3 @@ if(deleteAccount != null) {
         })
     })
 }
-
-console.log(usersAr)
-// localStorage.clear()
